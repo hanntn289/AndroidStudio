@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityVerifyCodeHuawei">
+
+    <TextView
+        android:id="@+id/btnxacnhan"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_login"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Xác Nhận"
+        android:textAppearance="@style/btnlogin"
+        app:layout_constraintStart_toEndOf="@+id/btnguicode"
+        app:layout_constraintTop_toBottomOf="@+id/verifycode" />
+
+    <TextView
+        android:id="@+id/password2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center|top"
+        android:text="Verify Code"
+        android:textColor="#2F80ED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/verifycode"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/nhap_tk_mk"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#2F80ED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password2" />
+
+    <TextView
+        android:id="@+id/btnguicode"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_login"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Gửi code"
+        android:textAppearance="@style/btnlogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifycode" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/huawei" />
+</androidx.constraintlayout.widget.ConstraintLayout>
